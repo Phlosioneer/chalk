@@ -21,7 +21,12 @@ As a shorthand the resulting truth table is encoded with `true = 1` and `false =
 
 Making a table like this is useful when trying to infer the input values given
 the output. For example, given that `A <=> B` is `true`, the only allowed values
-for `a` and `b` are the 1's in the table: `A = false, B = false` or `A = true, B = true`.
+for `A` and `B` are the 1's in the table: `A = false, B = false` or `A = true,
+B = true`.
+
+Another example: given that `A && B` is `false`, the only allowed values for `A`
+and `B` are the 0's in the table: `A = false, B = false`, `A = false, B = true`,
+or `A = true, B = false`.
 
 ## Binder
 A binder is an expression that binds a literal to a certain expression.
