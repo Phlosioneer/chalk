@@ -19,6 +19,10 @@ As a shorthand the resulting truth table is encoded with `true = 1` and `false =
 | 1001        | <=>             | Equivalence; if and only if; iff |
 | 1101        | =>              | Implication; if ... then         |
 
+Making a table like this is useful when trying to infer the input values given
+the output. For example, given that `A <=> B` is `true`, the only allowed values
+for `a` and `b` are the 1's in the table: `A = false, B = false` or `A = true, B = true`.
+
 ## Binder
 A binder is an expression that binds a literal to a certain expression.
 Examples for binders:
